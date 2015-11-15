@@ -1,0 +1,34 @@
+{
+  "name": "arttheweb.com",
+  "version": "1.0.0",
+  "description": "A set of resources and tools for designing in the browser.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "deploy": "./node_modules/.bin/harp compile _harp --output ../www && ./node_modules/.bin/gh-pages -d www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "harp": "^0.15.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.6.4",
+    "gh-pages": "^0.5.0",
+    "gulp": "^3.8.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/una/arttheweb.com"
+  },
+  "keywords": [
+    "resources",
+    "design",
+    "art",
+    "web",
+    "tools"
+  ],
+  "author": "Una Kravets",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/una/arttheweb.com/issues"
+  }
+}

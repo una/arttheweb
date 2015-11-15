@@ -37,11 +37,14 @@ $border: 1px solid white;
     border: $border;
     padding: .5em 1em;
     text-decoration: none;
+    transition-duration: .25s;
+
   }
 }
 
 .talk-list,
 .post-list,
-.tool-list {
+.tool-list,
+.etc-list {
   @extend %list--base;
 }

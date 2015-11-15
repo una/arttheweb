@@ -1,5 +1,5 @@
-<h1>#artTheWeb</h1>
-<p>Resources for designing in the browser from <a href="http://twitter.com/una">Una</a>.</p>
+<h1 class="title">#artTheWeb</h1>
+<p class="subtitle">A collection of articles, talks, and experiments built by <a href="http://twitter.com/una">Una</a> to serve as inspiration for designing in the browser.</p>
 
 <h2>Tutorials and Articles:</h2>
 <ul class="post-list">
@@ -7,7 +7,7 @@
   <% var item = public.links._data[i]; %>
   <% if ( item.type === "post") { %>
     <li class="post-item aden" style="background-image: url('img/artwork/<%= item.img %>')">
-      <a href="http://una.im/CSSgram" class="post-link"> <%= item.title %>
+      <a href="<%= item.link %>" class="post-link"> <%= item.title %>
       </a>
     </li>
     <% } %>
@@ -20,7 +20,7 @@
   <% var item = public.links._data[i]; %>
   <% if ( item.type === "tool") { %>
     <li class="tool-item aden" style="background-image: url('img/artwork/<%= item.img %>')">
-      <a href="http://una.im/CSSgram" class="tool-link"> <%= item.title %>
+      <a href="<%= item.link %>" class="tool-link"> <%= item.title %>
       </a>
     </li>
     <% } %>
@@ -33,7 +33,20 @@
   <% var item = public.links._data[i]; %>
   <% if ( item.type === "talk") { %>
     <li class="talk-item aden" style="background-image: url('img/artwork/<%= item.img %>')">
-      <a href="http://una.im/CSSgram" class="talk-link"> <%= item.title %>
+      <a href="<%= item.link %>" class="talk-link"> <%= item.title %>
+      </a>
+    </li>
+    <% } %>
+  <% } %>
+</ul>
+
+<h2>Web Experiments and More:</h2>
+<ul class="etc-list">
+  <% for(var i in public.links._data) { %>
+  <% var item = public.links._data[i]; %>
+  <% if ( item.type === "etc") { %>
+    <li class="etc-item aden" style="background-image: url('img/artwork/<%= item.img %>')">
+      <a href="<%= item.link %>" class="etc-link"> <%= item.title %>
       </a>
     </li>
     <% } %>

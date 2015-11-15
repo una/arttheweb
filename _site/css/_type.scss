@@ -1,4 +1,30 @@
+h1 {
+  font-size: 2.5em;
+  letter-spacing: .05em;
+}
+
 h2 {
   font-size: 1.65em;
   margin: 2em 0 1em;
+}
+
+.subtitle {
+  max-width: 30em;
+  display: block;
+  margin: 2em auto;
+  font-style: italic;
+  line-height: 1.5;
+
+  a {
+    color: mix(white, $accent, 40%);
+    transition-duration: .25s;
+    text-decoration: none;
+    border-bottom: 1px dashed mix(white, $accent, 40%);
+
+    &:hover {
+      color: mix(white, $accent, 10%);
+      border-bottom: 1px dashed mix(white, $accent, 10%);
+
+    }
+  }
 }

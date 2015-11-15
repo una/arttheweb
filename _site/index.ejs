@@ -1,12 +1,12 @@
 <h1>#artTheWeb</h1>
-<h2>Resources for designing in the browser from <a href="http://twitter.com/una">Una</a>.</h2>
+<p>Resources for designing in the browser from <a href="http://twitter.com/una">Una</a>.</p>
 
 <h2>Tutorials and Articles:</h2>
 <ul class="post-list">
   <% for(var i in public.links._data) { %>
   <% var item = public.links._data[i]; %>
   <% if ( item.type === "post") { %>
-    <li class="post-item">
+    <li class="post-item aden" style="background-image: url('img/artwork/<%= item.img %>')">
       <a href="http://una.im/CSSgram" class="post-link"> <%= item.title %>
       </a>
     </li>
@@ -15,16 +15,27 @@
 </ul>
 
 <h2>Tools and Libraries:</h2>
-<%- partial("_partials/_tools") %>
+<ul class="tool-list">
+  <% for(var i in public.links._data) { %>
+  <% var item = public.links._data[i]; %>
+  <% if ( item.type === "tool") { %>
+    <li class="tool-item aden" style="background-image: url('img/artwork/<%= item.img %>')">
+      <a href="http://una.im/CSSgram" class="tool-link"> <%= item.title %>
+      </a>
+    </li>
+    <% } %>
+  <% } %>
+</ul>
 
 <h2>Talks:</h2>
-<%- partial("_partials/_talks") %>
-
-<% for(var i in public.art._contents){ %>
-  <% var image = public.art._contents[i] %>
-  <% if ( image.match(/\b.(jpg|bmp|jpeg|gif|png|tif)\b/gi) ) { %>
-        <div>
-            <img src="art/<%= image %>" />
-        </div>
+<ul class="talk-list">
+  <% for(var i in public.links._data) { %>
+  <% var item = public.links._data[i]; %>
+  <% if ( item.type === "talk") { %>
+    <li class="talk-item aden" style="background-image: url('img/artwork/<%= item.img %>')">
+      <a href="http://una.im/CSSgram" class="talk-link"> <%= item.title %>
+      </a>
+    </li>
+    <% } %>
   <% } %>
-<% } %>
+</ul>

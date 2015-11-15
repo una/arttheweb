@@ -2,23 +2,27 @@
   "01": {
     "title": "Vintage Washout Effect",
     "type": "post",
-    "link": "http://una.im/vintage-washout"
+    "link": "http://una.im/vintage-washout",
+    "img": "monet.jpg"
   },
   "02": {
     "title": "Photoshop is Dead!: Editing Images in CSS",
     "type": "talk",
     "event": "CSSconf EU 2015",
-    "link": "https://www.youtube.com/watch?v=LY65F2e4B5w"
+    "link": "https://www.youtube.com/watch?v=LY65F2e4B5w",
+    "img": "princess-leonilla.jpg"
   },
   "03": {
     "title": "3D Anaglyph Effect",
     "type": "post",
-    "link": "http://una.im/3d-effect"
+    "link": "http://una.im/3d-effect",
+    "img": "saintmarc.jpg"
   },
   "04": {
     "title": "Vignette Study",
     "type": "post",
-    "link": "http://una.im/vignettes"
+    "link": "http://una.im/vignettes",
+    "img": "starrynight.jpg"
   },
   "05": {
     "title": "Faux Bokeh Effect",

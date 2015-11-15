@@ -27,28 +27,33 @@
   "05": {
     "title": "Faux Bokeh Effect",
     "type": "post",
-    "link": "http://una.im/bokeh"
+    "link": "http://una.im/bokeh",
+    "img": "weddingatcana.jpg"
   },
   "06": {
     "title": "Lomography Effect",
     "type": "post",
-    "link": "http://una.im/lomo"
+    "link": "http://una.im/lomo",
+    "img": "vangoghcafe.jpg"
   },
   "07": {
     "title": "Infrared Filter Effect",
     "type": "post",
-    "link": "http://una.im/infrared"
+    "link": "http://una.im/infrared",
+    "img": "persistenceofmemory.jpg"
   },
   "08": {
     "title": "CSSgram",
     "desc": "A CSS and Sass filter library for Instagram filters",
     "type": "tool",
-    "link": "http://una.im/CSSgram"
+    "link": "http://una.im/CSSgram",
+    "img": "luncheonoftheboating.jpg"
   },
   "09": {
     "title": "Travel Poetry Website",
     "desc": "Bad poetry of good memories: a web experiment",
     "type": "etc",
-    "link": "http://travels.surge.sh"
+    "link": "http://travels.surge.sh",
+    "img": "bencehajdu.jpg"
   }
 }

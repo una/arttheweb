@@ -1,1 +1,30 @@
-hi!
+<h1>#artTheWeb</h1>
+<h2>Resources for designing in the browser from <a href="http://twitter.com/una">Una</a>.</h2>
+
+<h2>Tutorials and Articles:</h2>
+<ul class="post-list">
+  <% for(var i in public.links._data) { %>
+  <% var item = public.links._data[i]; %>
+  <% if ( item.type === "post") { %>
+    <li class="post-item">
+      <a href="http://una.im/CSSgram" class="post-link"> <%= item.title %>
+      </a>
+    </li>
+    <% } %>
+  <% } %>
+</ul>
+
+<h2>Tools and Libraries:</h2>
+<%- partial("_partials/_tools") %>
+
+<h2>Talks:</h2>
+<%- partial("_partials/_talks") %>
+
+<% for(var i in public.art._contents){ %>
+  <% var image = public.art._contents[i] %>
+  <% if ( image.match(/\b.(jpg|bmp|jpeg|gif|png|tif)\b/gi) ) { %>
+        <div>
+            <img src="art/<%= image %>" />
+        </div>
+  <% } %>
+<% } %>

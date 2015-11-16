@@ -4,7 +4,7 @@
   "description": "A set of resources and tools for designing in the browser.",
   "main": "gulpfile.js",
   "scripts": {
-    "deploy": "./node_modules/.bin/harp compile _harp --output ../www && ./node_modules/.bin/gh-pages -d www",
+    "deploy": "./node_modules/.bin/harp compile _site --output ../www && ./node_modules/.bin/gh-pages -d www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

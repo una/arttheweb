@@ -55,5 +55,12 @@
     "type": "etc",
     "link": "http://travels.surge.sh",
     "img": "bencehajdu.jpg"
+  },
+  "10": {
+    "title": "Editing Images in CSS in 15 Minutes",
+    "type": "talk",
+    "event": "DotCSS 2015",
+    "link": "http://www.thedotpost.com/2015/12/una-kravets-editing-images-in-css",
+    "img": "monet-lilies.jpg"
   }
 }

@@ -1,0 +1,49 @@
+.fec16 {
+  background-image: url('../img/artwork/dali-reflection-elephants.jpg');
+  background-size: cover;
+
+  body {
+    padding: 2em 4em .5em;
+    max-width: 40em;
+    margin: 3em auto;
+    outline: 1px solid white;
+  }
+
+  .subtitle {
+    margin-top: .5em;
+  }
+
+  .footer-text {
+    @extend .subtitle;
+    text-align: center;
+    margin-top: 3em;
+  }
+}
+
+
+
+// Text list area
+
+.link-list-area {
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.75;
+  margin: 0 auto;
+
+  h3 {
+    margin-top: 1em;
+    color: $accent;
+  }
+}
+
+.text-list {
+  
+  a {
+    color: white;
+  }
+
+  li {
+    list-style: dotted;
+    margin-left: 2em;
+  }
+}

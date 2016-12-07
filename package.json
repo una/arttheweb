@@ -5,10 +5,13 @@
   "main": "gulpfile.js",
   "scripts": {
     "deploy": "./node_modules/.bin/harp compile _site --output ../www && ./node_modules/.bin/gh-pages -d www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "harp": "^0.20.3"
+    "harp": "^0.23.0",
+    "snyk": "^1.21.2"
   },
   "devDependencies": {
     "browser-sync": "^2.6.4",
@@ -32,5 +35,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/una/arttheweb.com/issues"
-  }
+  },
+  "snyk": true
 }

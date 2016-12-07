@@ -1,0 +1,20 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:ejs:20161128':
+    - harp > terraform > ejs:
+        patched: '2016-12-07T20:02:08.250Z'
+  'npm:marked:20150520':
+    - harp > terraform > marked:
+        patched: '2016-12-07T20:02:08.250Z'
+  'npm:negotiator:20160616':
+    - harp > connect > compression > accepts > negotiator:
+        patched: '2016-12-07T20:02:08.250Z'
+    - harp > connect > serve-index > accepts > negotiator:
+        patched: '2016-12-07T20:02:08.250Z'
+  'npm:tar:20151103':
+    - harp > download-github-repo > download > decompress > tar:
+        patched: '2016-12-07T20:02:08.250Z'
+  'npm:uglify-js:20151024':
+    - harp > terraform > harp-jade > transformers > uglify-js:
+        patched: '2016-12-07T20:02:08.250Z'

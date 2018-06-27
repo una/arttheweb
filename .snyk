@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.0
+version: v1.12.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -49,3 +49,10 @@ patch:
         patched: '2017-05-24T04:21:10.673Z'
     - harp > connect > serve-favicon > ms:
         patched: '2017-05-24T04:21:10.673Z'
+  'npm:mime:20170907':
+    - harp > mime:
+        patched: '2018-06-27T01:03:20.323Z'
+    - harp > send > mime:
+        patched: '2018-06-27T01:03:20.323Z'
+    - harp > connect > serve-static > send > mime:
+        patched: '2018-06-27T01:03:20.323Z'

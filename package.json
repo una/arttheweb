@@ -7,11 +7,12 @@
     "deploy": "./node_modules/.bin/harp compile _site --output ../www && ./node_modules/.bin/gh-pages -d www",
     "test": "echo \"Error: no test specified\" && exit 1",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "harp": "^0.23.0",
-    "snyk": "^1.30.1"
+    "snyk": "^1.88.1"
   },
   "devDependencies": {
     "browser-sync": "^2.6.4",
